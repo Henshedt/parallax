@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100vh;
+    background-color: #000000;
+}
+
+main {
+    height: 100vh;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.container img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: contain;
+}
+
+.container h1 {
+    z-index: 1;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 150px;
+    font-weight: 700;
+    text-shadow: 2px 2px #000000;
+}
+
+.container .mountain {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.container .forest {
+    z-index: 1;
+    top: 154px;
+}
+
+.container .deer {
+    z-index: 2;
+    width: 1000px;
+    top: 205px;
+    left: 250px;
+}
+
+.container .left-birch {
+    z-index: 3;
+    width: 550px;
+    top: 425px;
+    left: -25px;
+}
+
+.container .right-birch {
+    z-index: 4;
+    width: 600px;
+    left: 999px;
+    top: 412px;
+}
